@@ -1,2 +1,2 @@
 #!/bin/sh
-edje_cc $@ -id . -fd . default-sb.edc -o A-19-Bodhi-Green-Onix.edj
+edje_cc $@ -id . -fd . default-sb.edc -o MokshaGreen.edj
