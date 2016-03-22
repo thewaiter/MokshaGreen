@@ -1,0 +1,152 @@
+#include "macros.edc"
+
+externals.external:"elm";
+//theme api version.from 1.10 we will check version to avoid
+//compat issues
+data.item: "version" "110";
+
+externals.external: "elm";
+
+ data {
+    item: "theme/name"     "A-19-Bodhi-Green-Onix";
+    item: "theme/version"  "2.0";
+    item: "theme/author"   "Agustin J Verdegal T <agust>";
+    item: "theme/license"  "License";
+}
+collections {
+#include "colorclasses.edc"
+#include "fonts-sb.edc"
+
+// elm
+#include "edc-sb/elm/bg.edc"
+#include "edc-sb/elm/button.edc"
+// XXX: mobile mode needs invbisible scrollers... make signals that do this
+#include "edc-sb/elm/scroller.edc"
+// XXX: mobile mode needs different entry setup
+#include "edc-sb/elm/entry.edc"
+#include "edc-sb/elm/frame.edc"
+#include "edc-sb/elm/label.edc"
+#include "edc-sb/elm/separator.edc"
+#include "edc-sb/elm/check.edc"
+#include "edc-sb/elm/slider.edc"
+#include "edc-sb/elm/radio.edc"
+#include "edc-sb/elm/bubble.edc"
+#include "edc-sb/elm/panes.edc"
+#include "edc-sb/elm/toolbar.edc"
+#include "edc-sb/elm/genlist.edc"
+#include "edc-sb/elm/list.edc"
+#include "edc-sb/elm/conform.edc"
+#include "edc-sb/elm/icon.edc"
+#include "edc-sb/elm/video.edc"
+#include "edc-sb/elm/access.edc"
+#include "edc-sb/elm/photo.edc"
+#include "edc-sb/elm/focus.edc"
+#include "edc-sb/elm/datetime.edc"
+#include "edc-sb/elm/player.edc"
+#include "edc-sb/elm/thumb.edc"
+#include "edc-sb/elm/pointer.edc"
+#include "edc-sb/elm/fileselector.edc"
+#include "edc-sb/elm/win.edc"
+#include "edc-sb/elm/inwin.edc"
+#include "edc-sb/elm/slideshow.edc"
+#include "edc-sb/elm/diskselector.edc"
+#include "edc-sb/elm/ctxpopup.edc"
+#include "edc-sb/elm/multibuttonentry.edc"
+#include "edc-sb/elm/dayselector.edc"
+#include "edc-sb/elm/actionslider.edc"
+#include "edc-sb/elm/photocam.edc"
+#include "edc-sb/elm/tooltip.edc"
+#include "edc-sb/elm/colorsel.edc"
+#include "edc-sb/elm/segment_control.edc"
+#include "edc-sb/elm/flipselector.edc"
+#include "edc-sb/elm/notify.edc"
+#include "edc-sb/elm/map.edc"
+#include "edc-sb/elm/index.edc"
+#include "edc-sb/elm/calendar.edc"
+#include "edc-sb/elm/layout.edc"
+#include "edc-sb/elm/progress.edc"
+#include "edc-sb/elm/naviframe.edc"
+#include "edc-sb/elm/panel.edc"
+#include "edc-sb/elm/popup.edc"
+#include "edc-sb/elm/border.edc"
+// XXX: min size calc problems - too wide! ... err ok on my 32bit box... eh?
+#include "edc-sb/elm/spinner.edc"
+#include "edc-sb/elm/menu.edc"
+#include "edc-sb/elm/clock.edc"
+#include "edc-sb/elm/gengrid.edc"
+#include "edc-sb/elm/hover.edc"
+
+
+// desktop in general
+#include "edc-sb/comp.edc"
+#include "edc-sb/comp_effects.edc"
+#include "edc-sb/comp_compat.edc"
+#include "edc-sb/background.edc"
+#include "edc-sb/shelf.edc"
+#include "edc-sb/border.edc"
+#include "edc-sb/dialog.edc"
+#include "edc-sb/conf.edc"
+#include "edc-sb/gadman.edc"
+#include "edc-sb/syscon.edc"
+#include "edc-sb/pointer.edc"
+#include "edc-sb/sys.edc"
+#include "edc-sb/winlist.edc"
+#include "edc-sb/desklock.edc"
+#include "edc-sb/wizard.edc"
+#include "edc-sb/init.edc"
+#include "edc-sb/about-e.edc"
+#include "edc-sb/about-theme.edc"
+#include "edc-sb/transitions.edc"
+// widgets
+#include "edc-sb/menu.edc"
+#include "edc-sb/button.edc"
+#include "edc-sb/check.edc"
+#include "edc-sb/radio.edc"
+#include "edc-sb/label.edc"
+#include "edc-sb/frame.edc"
+#include "edc-sb/slider.edc"
+#include "edc-sb/scrollframe.edc"
+#include "edc-sb/textblock.edc"
+#include "edc-sb/ilist.edc"
+#include "edc-sb/toolbar.edc"
+#include "edc-sb/preview.edc"
+#include "edc-sb/deskpreview.edc"
+#include "edc-sb/entry.edc"
+#include "edc-sb/fileman.edc"
+#include "edc-sb/colorwell.edc"
+#include "edc-sb/fontpreview.edc"
+#include "edc-sb/cslider.edc"
+#include "edc-sb/spectrum.edc"
+// modules
+#include "edc-sb/start.edc"
+#include "edc-sb/pager.edc"
+#include "edc-sb/xkbswitch.edc"
+#include "edc-sb/tasks.edc"
+#include "edc-sb/connman.edc"
+#include "edc-sb/music_control.edc"
+#include "edc-sb/systray.edc"
+#include "edc-sb/appmenu.edc"
+#include "edc-sb/clock.edc"
+#include "edc-sb/ibar-ibox.edc"
+#include "edc-sb/colors.edc"
+#include "edc-sb/edgebindings.edc"
+#include "edc-sb/randr.edc"
+#include "edc-sb/notification.edc"
+#include "edc-sb/cpufreq.edc"
+#include "edc-sb/temperature.edc"
+#include "edc-sb/backlight.edc"
+#include "edc-sb/mixer.edc"
+#include "edc-sb/battery.edc"
+#include "edc-sb/evrything.edc"
+#include "edc-sb/illume.edc"
+#include "edc-sb/bluez4.edc"
+#include "edc-sb/packagekit.edc"
+// icons
+#include "edc-sb/icons.edc"
+#include "edc-sb/border-icons.edc"
+
+// port unchanged stuff so this can work as a replacement
+#include "edc-sb/O/efm_icons.edc"
+#include "edc-sb/O/icons.edc"
+#include "edc-sb/O/wallpaper.edc"
+}
