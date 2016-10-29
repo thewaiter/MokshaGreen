@@ -1,9 +1,9 @@
 group { name: "e/modules/systray/main";
    alias: "e/modules/systray/main/default";
    alias: "e/modules/systray/main/invisible";
-  data.item: "default" "14 18 19";
-   data.item: "inset" "14 18 19";
-   data.item: "plain" "14 18 19";
+  data.item: "default" "35 41 44";
+   data.item: "inset" "35 41 44";
+   data.item: "plain" "35 41 44";
    parts {
       part { name: "base"; type: RECT;
          description { state: "default" 0.0;
