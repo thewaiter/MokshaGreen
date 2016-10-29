@@ -8,10 +8,11 @@ data.item: "version" "110";
 externals.external: "elm";
 
  data {
-    item: "theme/name"     "A-19-Bodhi-Green-Onix";
+    item: "theme/name"     "Moksha Green";
     item: "theme/version"  "2.0";
-    item: "theme/author"   "Agustin J Verdegal T <agust>";
+    item: "theme/author"   "agust, waiter, hoogland";
     item: "theme/license"  "License";
+    item: "gtk-theme"		"MokshaGreen";
 }
 collections {
 #include "colorclasses.edc"
