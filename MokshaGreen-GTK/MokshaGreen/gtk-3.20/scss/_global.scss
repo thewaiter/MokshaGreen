@@ -5,8 +5,8 @@
 // default color scheme
 $bg_color: if($variant == "dark", #ffffff, #21272a);
 $fg_color: if($variant == "dark", #21272a, #ffffff);
-$base_color: if($variant == "dark", #ffffff, #172526);
-$text_color: if($variant == "dark", #172526, #ffffff);
+$base_color: if($variant == "dark", #ffffff, #272e32);
+$text_color: if($variant == "dark", #272e32, #ffffff);
 $button_bg_color: if($variant == "dark", #ffffff, #272e32);
 $button_fg_color: if($variant == "dark", #272e32, #ffffff);
 $header_button_bg_color: #525252;
@@ -23,7 +23,7 @@ $borders_color: if($variant == 'light', mix($bg_color, $fg_color, .08), shade($b
 $borders_edge: if($variant == 'light', transparentize(white, 0.2), transparentize($fg_color, 0.93));
 
 // dark colors
-$dark_bg_color: #0e1213;
+$dark_bg_color: #172526;
 $dark_fg_color: #ffffff;
 
 // shadows
