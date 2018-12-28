@@ -501,7 +501,7 @@ group { name: "elm/slider/horizontal/default";
       }
       program {
          signal: "elm,state,text,hidden"; source: "elm";
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~LABEL; set_int(slmode, m);
             eval_mode(m);
@@ -517,7 +517,7 @@ group { name: "elm/slider/horizontal/default";
       }
       program {
          signal: "elm,state,icon,hidden"; source: "elm";
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~ICON; set_int(slmode, m);
             eval_mode(m);
@@ -533,7 +533,7 @@ group { name: "elm/slider/horizontal/default";
       }
       program { name: "end_hide";
          signal: "elm,state,end,hidden"; source: "elm";
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~END; set_int(slmode, m);
             eval_mode(m);
@@ -554,7 +554,7 @@ group { name: "elm/slider/horizontal/default";
       program {
          signal: "elm,state,units,hidden"; source: "elm";
          action:  STATE_SET "default" 0.0;
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~UNITS; set_int(slmode, m);
             eval_mode(m);
@@ -574,7 +574,7 @@ group { name: "elm/slider/horizontal/default";
       }
       program {
          signal: "elm,state,inverted,off"; source: "elm";
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~INVERT; set_int(slmode, m);
             eval_mode(m);
@@ -594,7 +594,7 @@ group { name: "elm/slider/horizontal/default";
       }
       program {
          signal: "elm,state,enabled"; source: "elm";
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~DISABLE; set_int(slmode, m);
             eval_mode(m);
@@ -618,9 +618,9 @@ group { name: "elm/slider/horizontal/indicator/default";
    alias: "elm/slider/horizontal/indicator/disabled";
    alias: "elm/slider/horizontal/popup/default";
    alias: "elm/slider/horizontal/indicator/media_player/position/default";
-   alias: "elm/slider/horizontal/indicator/media_player/position/flush"; 
+   alias: "elm/slider/horizontal/indicator/media_player/position/flush";
    alias: "elm/slider/horizontal/indicator/media_player/volume/default";
-   alias: "elm/slider/horizontal/indicator/media_player/volume/flush"; 
+   alias: "elm/slider/horizontal/indicator/media_player/volume/flush";
    images.image: "darken_rounded_square.png" COMP;
    parts {
       part { name: "base"; type: SPACER;
@@ -1216,7 +1216,7 @@ group { name: "elm/slider/vertical/default";
       }
       program {
          signal: "elm,state,text,hidden"; source: "elm";
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~LABEL; set_int(slmode, m);
             eval_mode(m);
@@ -1232,7 +1232,7 @@ group { name: "elm/slider/vertical/default";
       }
       program {
          signal: "elm,state,icon,hidden"; source: "elm";
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~ICON; set_int(slmode, m);
             eval_mode(m);
@@ -1248,7 +1248,7 @@ group { name: "elm/slider/vertical/default";
       }
       program { name: "end_hide";
          signal: "elm,state,end,hidden"; source: "elm";
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~END; set_int(slmode, m);
             eval_mode(m);
@@ -1269,7 +1269,7 @@ group { name: "elm/slider/vertical/default";
       program {
          signal: "elm,state,units,hidden"; source: "elm";
          action:  STATE_SET "default" 0.0;
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~UNITS; set_int(slmode, m);
             eval_mode(m);
@@ -1289,7 +1289,7 @@ group { name: "elm/slider/vertical/default";
       }
       program {
          signal: "elm,state,inverted,off"; source: "elm";
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~INVERT; set_int(slmode, m);
             eval_mode(m);
@@ -1309,7 +1309,7 @@ group { name: "elm/slider/vertical/default";
       }
       program {
          signal: "elm,state,enabled"; source: "elm";
-         script {         
+         script {
             new m = get_int(slmode);
             m &= ~DISABLE; set_int(slmode, m);
             eval_mode(m);

@@ -701,7 +701,7 @@ group { name: "elm/button/base/media_player/prev/default";
    alias: "elm/button/base/media_player/eject/flush";
    alias: "elm/button/base/media_player/volume/flush";
    alias: "elm/button/base/media_player/mute/flush";
-   
+
    images.image: "shadow_inset_bevels.png" COMP;
    images.image: "shadow_angled_in_sides.png" COMP;
    parts {
@@ -798,7 +798,7 @@ group { name: "elm/button/base/hoversel_vertical/default";
    alias: "elm/button/base/hoversel_horizontal/entry";
 
    images.image: "vertical_separated_bar_glow.png" COMP;
-   
+
    parts {
       part { name: "elm.text";
          description { state: "default" 0.0;
