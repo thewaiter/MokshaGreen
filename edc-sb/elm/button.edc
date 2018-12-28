@@ -368,6 +368,9 @@ group { name: "elm/button/base/anchor";
             rel1.offset: 0 0;
             rel2.offset: 0 0;
          }
+         description { state: "clicked" 0.0;
+            inherit: "default" 0.0;
+         }
       }
       part { name: "icon_clip"; type: RECT;
          description { state: "default" 0.0;
