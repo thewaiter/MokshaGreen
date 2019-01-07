@@ -1,0 +1,20 @@
+/*fonts {
+   font: "PT_Sans-Web-Regular.ttf" "PTSans";
+   font: "PT_Sans-Web-Bold.ttf" "PTSans-Bold";
+   font: "PT_Sans-Web-Italic.ttf" "PTSans-Italic";
+   font: "PT_Sans-Web-BoldItalic.ttf" "PTSans-BoldItalic";
+}
+
+#define FN     "PTSans"
+#define FNBD   "PTSans-Bold"
+#define FNIT   "PTSans-Italic"
+#define FNBDIT "PTSans-BoldItalic"
+*/
+#define FN     "Sans"
+#define FNBD   "Sans:style=Bold"
+#define FNIT   "Sans:style=Oblique"
+#define FNBDIT "Sans:style=Bold Italic"
+
+#define FN_COL_DEFAULT 255 255 255 255; color3: 0 0 0 128
+#define FN_COL_HIGHLIGHT 152 205 87 255; color2: 152 205 87 24; color3: 152 205 87 18
+#define FN_COL_DISABLE 152 205 87 255; color3: 255 255 255 25;
