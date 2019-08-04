@@ -776,8 +776,8 @@
             target: "icon_box_shadow";
             target: "icon_box";
             target: "base";
-            target: "icon_zoom";
-            target: "e.swallow.content";
+            //~ target: "icon_zoom";
+            //~ target: "e.swallow.content";
             target: "events";
             after: "thumb_gen2";
          }
@@ -1057,8 +1057,8 @@
             target: "icon_box_shadow";
             target: "icon_box";
             target: "base";
-            target: "icon_zoom";
-            target: "e.swallow.content";
+            //~ target: "icon_zoom";
+            //~ target: "e.swallow.content";
             target: "events";
             target: "theme";
             after: "thumb_gen2";
@@ -1270,8 +1270,8 @@
             target: "icon_box_shadow";
             target: "icon_box";
             target: "base";
-            target: "icon_zoom";
-            target: "e.swallow.content";
+            //~ target: "icon_zoom";
+            //~ target: "e.swallow.content";
             target: "events";
             after: "thumb_gen2";
          }

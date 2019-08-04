@@ -750,7 +750,7 @@ group { name: "elm/button/base/media_player/prev/default";
          }
       }
    }
-   programs {
+  programs {
       program {
          signal: "mouse,down,1"; source: "event";
          action: SIGNAL_EMIT "elm,action,press" "elm";
@@ -758,29 +758,6 @@ group { name: "elm/button/base/media_player/prev/default";
       }
       program { name:   "button_click_anim";
          action: STATE_SET "selected" 0.0;
-         target: "shadow1";
-         target: "shadow2";
-      }
-      program {
-         signal: "mouse,up,1"; source: "event";
-         action: SIGNAL_EMIT "elm,action,unpress" "elm";
-         after: "button_unclick_anim";
-      }
-      program { name:   "button_unclick_anim";
-         action: STATE_SET "default" 0.0;
-         target: "shadow1";
-         target: "shadow2";
-      }
-      program {
-         signal: "elm,anim,activate"; source: "elm";
-         action: STATE_SET "clicked" 0.0;
-         target: "shadow1";
-         target: "shadow2";
-         after: "button_unpressed_anim";
-      }
-      program { name:   "button_unpressed_anim";
-         action: STATE_SET "default" 0.0;
-         in: 0.5 0.0;
          target: "shadow1";
          target: "shadow2";
       }
