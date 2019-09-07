@@ -4,7 +4,7 @@ externals.external:"elm";
 //theme api version.from 1.10 we will check version to avoid
 //compat issues
 data.item: "version" "110";
-efl_version: 1 21;
+efl_version: 1 22;
 externals.external: "elm";
 
  data {
