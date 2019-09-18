@@ -416,7 +416,7 @@ group { name: "e/modules/clock/digital";
 #undef DIGITC
 
        part { name: "e.text.today"; type: TEXT;
-          effect: GLOW;
+          //~ effect: GLOW;
           scale: 1;
           description { state: "default" 0.0;
              rel1.relative: 0.0 1.0;
@@ -424,20 +424,21 @@ group { name: "e/modules/clock/digital";
              rel2.offset: -1 1;
              align: 0.5 1.0;
              color: 152 205 87 255;
-             color2: 152 205 87 24;
-             color3: 152 205 87 18;
+             //~ color2: 152 205 87 24;
+             //~ color3: 152 205 87 18;
              text { font: FN; size: 8;
                 text_class: "module_small";
                 align: 0.5 0.5;
-                min: 0 1;
+                //~ min: 0 1;
+                fit: 1 0;
              }
              fixed: 0 1;
-             visible: 0;
           }
           description { state: "date" 0.0;
              inherit: "default" 0.0;
-             visible: 1;
-             fixed: 1 1;
+             fixed: 0 1;
+             text.min: 1 1;
+             text.ellipsis: -1;
           }
        }
                        
