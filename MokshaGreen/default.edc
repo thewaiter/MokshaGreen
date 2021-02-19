@@ -11,9 +11,9 @@ externals.external: "elm";
     item: "theme/version"  "2.0";
     item: "theme/author"   "agust, the_waiter, hoogland";
     item: "theme/license"  "License";
-    item: "gtk-theme"	   "MokshaGreen";
-    item: "elm-theme"	   "MokshaGreen";
-    item: "icon-theme"     "Icons-Moksha-Green"; 
+    item: "gtk-theme"	     "MokshaGreen-GTK";
+    item: "elm-theme"	     "MokshaGreen";
+    item: "icon-theme"     "MokshaGreen-Icons"; 
 }
 collections {
 #include "colorclasses.edc"
