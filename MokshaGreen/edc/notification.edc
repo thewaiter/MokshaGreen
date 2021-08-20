@@ -127,7 +127,7 @@ group { name: "e/modules/notification/main";
       part { name: "bodyclip"; type: RECT;
          description { state: "default" 0.0;
             rel2.offset: -13 -13;
-            min: 220 80;
+            min: 220 90;
          }
       }
       part { name: "notification.swallow.app_icon"; type: SWALLOW; mouse_events: 0;
@@ -143,6 +143,7 @@ group { name: "e/modules/notification/main";
       }
       part { name: "notification.textblock.message"; type: TEXTBLOCK; mouse_events: 0;
          clip_to: "bodyclip";
+         scale: 1;
          description { state: "default" 0.0;
             align: 0.0 0.0;
             rel1.to_x: "notification.swallow.app_icon";
