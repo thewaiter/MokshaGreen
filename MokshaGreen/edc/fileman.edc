@@ -20,7 +20,7 @@ group { name: "e/fileman/default/list/variable";
    parts {
       part { name: "base"; type: RECT; mouse_events: 0;
          description { state: "default" 0.0;
-            color: 64 64 64 255;
+            color: 14 18 19 255;
             color_class: "ilist_item_base";
          }
       }
@@ -412,7 +412,7 @@ group { name: "e/fileman/default/list_odd/variable";
    parts {
       part { name: "base";
          description { state: "default" 0.0;
-            color: 56 56 56 255;
+            color: 34 39 42 255;
          }
       }
    }
