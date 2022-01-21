@@ -28,7 +28,9 @@ group { name: "e/desktop/background";
 	 }
 	 part { name: "ELogo";
 	    description { state: "default" 0.0;
-	       min: 270 355;		// The absence of an align: will
+		rel1.relative: 0.4 0.3;
+		rel2.relative: 0.6 0.7;
+	       //~ min: 270 355;		// The absence of an align: will
 	       max: 270 350;		// make the image centred.
 	       image.normal: "ELogo.png";
 	    }
