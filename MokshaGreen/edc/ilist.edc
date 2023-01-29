@@ -39,6 +39,7 @@ group { name: "e/ilist";
                min: 1 1;
                align: 0.5 0.5;
                text_class: "ilist_typebuf";
+               ellipsis: -1;
             }
          }
       }
