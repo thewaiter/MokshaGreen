@@ -14,7 +14,7 @@ group { name: "e/modules/battery/main";
          if ((type == MSG_FLOAT) && (id == 1)) {
             new Float:val;
             // new r = 51, g = 153, b = 255;
-            new r = 152, g = 205, b = 87;
+            new r = 117, g = 172, b = 49;
             new lr = 255, lg = 0, lb = 0;
             
             val = getfarg(2);

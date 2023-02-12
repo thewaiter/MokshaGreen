@@ -114,7 +114,7 @@ group { name: "e/modules/xkbswitch/noflag";
             rel1.offset: 3 3;
             rel2.offset: -4 -4;
             aspect: 1.8 1.8; aspect_preference: BOTH;
-            color: 152 205 87 255;
+            color: 117 172 49 255;
          }
       }
       part { name: "e.text.label"; type: TEXT; mouse_events: 0;
