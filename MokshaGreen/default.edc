@@ -13,7 +13,7 @@ externals.external: "elm";
     item: "theme/license"  "License";
     item: "gtk-theme"      "MokshaGreen";
 //~ item: "elm-theme"      "MokshaGreen";
-    item: "icon-theme"     "MokshaGreen-Icons";
+    item: "icon-theme"     "Icons-Moksha-Green";
 }
 collections {
 #include "colorclasses.edc"
