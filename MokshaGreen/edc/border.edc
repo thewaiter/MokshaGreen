@@ -41,8 +41,10 @@ group { name: "e/widgets/border/default/border";
          description { state: "default" 0.0;
             rel1.relative: 0.0 1.0;
             rel1.to_y: "top";
+            rel1.offset: 1 0;
             rel2.relative: 1.0 0.0;
             rel2.to_y: "bottom";
+            rel2.offset: -2 0;
          }
          description { state: "shaded" 0.0;
             inherit: "default" 0.0;
@@ -536,6 +538,11 @@ group { name: "e/widgets/border/default/border";
             rel2.offset: -1 2;
             rel2.to: "top";
             FIXED_SIZE(69, 5)
+            visible: 0;
+         }
+         description { state: "focused" 0.0;
+            inherit: "default" 0.0;
+            visible: 1;
          }
       }
    }
@@ -558,6 +565,7 @@ group { name: "e/widgets/border/default/border";
          target: "title2";
          target: "clip1";
          target: "clip2";
+         target: "shine";
       }
       program {
          signal: "e,state,unfocused"; source: "e";
@@ -567,6 +575,7 @@ group { name: "e/widgets/border/default/border";
          target: "title2";
          target: "clip1";
          target: "clip2";
+         target: "shine";
       }
       program {
          signal: "e,state,urgent"; source: "e";
