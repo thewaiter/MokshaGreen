@@ -198,7 +198,7 @@ group { name: "e/widgets/winlist/item";
          description { state: "default" 0.0;
             align: 0.0 0.5;
             aspect: 1.0 1.0; aspect_preference: VERTICAL;
-            rel1.offset: 2 2;
+            rel1.offset: 7 2;
             rel2.relative: 0.0 1.0;
             rel2.offset: 2 -3;
          }
