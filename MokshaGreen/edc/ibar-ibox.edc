@@ -34,9 +34,10 @@ group { name: "e/modules/ibox/icon";
          }
       }
       part { name: "indicator";
+          scale: 1;
          description { state: "default";
-            min: 10 10;
-            max: 10 10;
+            min: 8 8;
+            max: 8 8;
             rel1.relative: 1.0 1.0;
             rel1.offset: -5 -5;
             rel2.relative: 1.0 1.0;
