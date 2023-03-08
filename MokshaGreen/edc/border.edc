@@ -1008,7 +1008,7 @@ group { name: "e/widgets/border/pixel/border";
          clip_to: "client_clip";
          description { state: "default" 0.0;
             rel1.offset: 1 1;
-            rel2.offset: -2 -2;
+            rel2.offset: -2 -3;
          }
       }
       part { name: "top"; type: RECT;
@@ -1019,18 +1019,18 @@ group { name: "e/widgets/border/pixel/border";
          }
          description { state: "focused" 0.0;
             inherit: "default" 0.0;
-            color: 152 205 87 255;
+            color: 14 18 19 255;
          }
       }
       part { name: "bottom"; type: RECT;
          description { state: "default" 0.0;
             color: 0 0 0 255;
             align: 0.0 1.0;
-            max: 99999 1;
+            max: 99999 3;
          }
          description { state: "focused" 0.0;
             inherit: "default" 0.0;
-            color: 152 205 87 255;
+            color: 14 18 19 255;
          }
       }
       part { name: "left"; type: RECT;
@@ -1041,7 +1041,7 @@ group { name: "e/widgets/border/pixel/border";
          }
          description { state: "focused" 0.0;
             inherit: "default" 0.0;
-            color: 152 205 87 255;
+            color: 14 18 19 255;
          }
       }
       part { name: "right"; type: RECT;
@@ -1052,7 +1052,7 @@ group { name: "e/widgets/border/pixel/border";
          }
          description { state: "focused" 0.0;
             inherit: "default" 0.0;
-            color: 152 205 87 255;
+            color: 14 18 19 255;
          }
       }
       part { name: "e.event.resize.tl"; type: RECT;
