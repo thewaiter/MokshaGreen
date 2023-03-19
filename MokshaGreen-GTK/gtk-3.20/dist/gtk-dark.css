@@ -790,7 +790,7 @@ entry {
   entry:active:disabled, entry:checked:disabled {
     border-color: mix(#d9d7d4,#272e32,0.8); }
   entry:focus, entry:active {
-    border-color: mix(#98cc57,mix(#272e32,#e6e6fa,0.18),0.3); }
+    border-color: mix(#66ee66,mix(#75ac31,#000000,0.2),0.5); }
   entry:disabled {
     background-color: mix(#272e32,#d9d7d4,0.07);
     background-image: none;
