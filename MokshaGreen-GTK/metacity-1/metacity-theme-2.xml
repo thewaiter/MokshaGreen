@@ -9,16 +9,16 @@
 </info>
 
 <!-- ::: CONSTANTS ::: -->
-<constant name="C_titlebar_focused" value="#172526" />
-<constant name="C_titlebar_unfocused" value="#272e32" />
-<constant name="C_border_focused" value="#98cc57" />
+<constant name="C_titlebar_focused" value="#242b2f" />
+<constant name="C_titlebar_unfocused" value="#242b2f" />
+<constant name="C_border_focused" value="#1b2c2e" />
 <constant name="C_border_unfocused" value="#4d4d4d" />
 <constant name="C_title_focused" value="#f2f1f0" />
-<constant name="C_title_unfocused" value="blend/#e6e6fa/#272e32/0.4" />
+<constant name="C_title_unfocused" value="blend/#e6e6fa/#242b2f/0.4" />
 <constant name="C_icons_focused" value="#f2f1f0" />
 <constant name="C_icons_focused_prelight" value="gtk:bg[SELECTED])" />
 <constant name="C_icons_focused_pressed" value="shade/gtk:bg[SELECTED]/0.8" />
-<constant name="C_icons_unfocused" value="blend/#e6e6fa/#272e32/0.4" />
+<constant name="C_icons_unfocused" value="blend/#e6e6fa/#242b2f/0.4" />
 <constant name="C_icons_unfocused_prelight" value="gtk:bg[SELECTED])" />
 <constant name="C_icons_unfocused_pressed" value="shade/gtk:bg[SELECTED]/0.8" />
 
