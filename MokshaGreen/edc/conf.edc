@@ -56,7 +56,6 @@ group { name: "e/widgets/configure/main";
 group { name: "e/modules/conf/main";
    images.image: "button_normal.png" COMP;
    images.image: "button_clicked.png" COMP;
-   images.image: "spanner_inset.png" COMP;
    images.image: "spanner_hilight.png" COMP;
    images.image: "spanner_glow.png" COMP;
    min: 16 16;
