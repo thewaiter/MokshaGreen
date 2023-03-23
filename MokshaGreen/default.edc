@@ -150,6 +150,7 @@ collections {
 #include "edc/deskshow.edc"
 #include "edc/mem.edc"
 #include "edc/cpu.edc"
+#include "edc/trash.edc"
 
 // port unchanged stuff so this can work as a replacement
 #include "edc/O/efm_icons.edc"
