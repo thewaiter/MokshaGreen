@@ -1,0 +1,52 @@
+images.image: "cpu.png" COMP;
+
+styles {
+	style { "cpu_style";
+		base: "font=Sans:style=Mono font_size=12 text_class=tb_plain align=center color=#ccc style=outline_soft_shadow shadow_color=#00000032 wrap=word";
+		tag:  "br" "\n";
+	}
+}
+
+group { "modules/cpu/main";
+	parts {
+		part { "base0";
+			desc { "default"; hid;
+				image.normal: "bevel_out.png";
+				image.border: 4 4 4 4;
+			}
+			desc { "highlight"; inherit; vis; }
+		}
+		part { "cpu";
+			desc { "default";
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+				align: 0.5 0.5;
+				image.normal: "cpu.png";
+			}
+		}
+		textblock { "load"; effect: OUTLINE_SOFT_SHADOW; nomouse;
+			desc { "default";
+				align: 0.5 0.5;
+				rel1.to: "cpu";
+				rel2.to: "cpu";
+				text.style: "cpu_style";
+				text.min: 0 1;
+			}
+		}
+		rect { "over";
+			desc { "default"; color: "#00000000"; }
+	}
+}
+	programs {
+		program {
+			signal: "mouse,in"; source: "over";
+			action: STATE_SET "highlight" 0.0;
+			target: "base0";
+		}
+		program {
+			signal: "mouse,out"; source: "over";
+			action: STATE_SET "default" 0.0;
+			target: "base0";
+		}
+	}
+}

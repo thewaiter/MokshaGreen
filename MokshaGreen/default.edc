@@ -149,6 +149,7 @@ collections {
 #include "edc/calendar.edc"
 #include "edc/deskshow.edc"
 #include "edc/mem.edc"
+#include "edc/cpu.edc"
 
 // port unchanged stuff so this can work as a replacement
 #include "edc/O/efm_icons.edc"
