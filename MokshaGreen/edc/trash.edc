@@ -33,6 +33,8 @@ group
                state: "default" 0.0;
                color: 255 255 255 0;
                aspect: 0.82 0.82;
+               rel1.relative: 0.05 0.05;
+               rel2.relative: 0.95 0.95;
                aspect_preference: BOTH;
             }
             description {
