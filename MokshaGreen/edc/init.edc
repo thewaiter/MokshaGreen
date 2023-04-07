@@ -1,7 +1,7 @@
 group { name: "e/init/splash";
    images.image: "screen_circular_shadow.png" COMP;
    images.image: "bg_radgrad.png" COMP;
-   images.image: "1920x1080.jpg" COMP;
+   images.image: "splash.png" COMP;
    images.image: "logo_blue_small.png" COMP;
    images.image: "logo_blue_small_glow.png" COMP;
    images.image: "led_square_base.png" COMP;
@@ -28,8 +28,8 @@ group { name: "e/init/splash";
       }
       part { name: "pat";
          description { state: "default" 0.0;
-            image.normal: "1920x1080.jpg";
-            ASPECT_FILL((1680/1050))
+            image.normal: "splash.png";
+            //~ ASPECT_FILL((1680/1050))
          }
       }
       part { name: "logo";
@@ -68,12 +68,13 @@ group { name: "e/init/splash";
             text { font: FNBD; size: 20;
                min: 0 1;
                text_class: "init_title";
+               text: "Moksha";
             }
             fixed: 0 1;
          }
       }
       part { name: "e.text.status"; type: TEXT;
-         effect: GLOW;
+         //~ effect: GLOW;
          scale: 1;
          description { state: "default" 0.0;
             align: 0.5 1.0;
@@ -83,12 +84,11 @@ group { name: "e/init/splash";
             rel2.relative: 0.95 0.0;
             rel2.offset: -5 -1;
             rel2.to_y: "logo";
-            color: 152 205 87 255;
-            color2: 152 205 87 24;
-            color3: 152 205 87 18;
+            color: 20 20 20 255;
             text { font: FN; size: 10;
                min: 0 1;
                text_class: "init_status";
+               text: "Moksha desktop by Bodhi team";
             }
             fixed: 0 1;
          }
@@ -532,15 +532,13 @@ group { name: "e/init/extra_screen";
       part { name: "bg";
          description { state: "default" 0.0;
             image.normal: "bg_radgrad.png";
-            image.scale_hint: STATIC;
             fill.smooth: 0;
-            ASPECT_FILL((1024/653))
          }
       }
       part { name: "pat";
          description { state: "default" 0.0;
-            image.normal: "1920x1080.jpg";
-            ASPECT_FILL((1680/1050))
+            image.normal: "splash.png";
+            ASPECT_FILL((2062/1124))
          }
       }
       part { name: "shadow"; mouse_events: 0;
