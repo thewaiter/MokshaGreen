@@ -1181,6 +1181,7 @@ group { name: "e/widgets/border/default/move";
             text { font: FN; size: 11;
                min: 1 1;
                text_class: "move_text";
+               ellipsis: -1;
             }
          }
       }
