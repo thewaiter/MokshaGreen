@@ -22,10 +22,8 @@ group { "modules/cpu/main";
 				align: 0.5 0.5;
 				rel1.to: "cpu";
 				rel2.to: "cpu";
-				rel1.offset: 0 -7;
 				text.style: "cpu_style";
 				text.min: 0 1;
-				offscale;
 			}
 		}
     }
