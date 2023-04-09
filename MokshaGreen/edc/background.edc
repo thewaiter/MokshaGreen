@@ -1,39 +1,44 @@
 /*** DEFAULT WALLPAPER ***/
 group { name: "e/desktop/background";
-         image: "Scaled.png" COMP;
-	 image: "LeftBit.png" COMP;
-	 image: "RightBit.png" COMP;
-	 image: "ELogo.png" COMP;
-         parts {
-	 part { name: "Scaled";
-	    description { state: "default" 0.0;
-	       image.normal: "Scaled.png"; // Make it fill all the space
-	    }
-	 }
-	 part { name: "LeftBit";
-	    description { state: "default" 0.0;
-	       align: 0.0 1.0;		// Align left and at the bottom.
-	       min: 334 314;		// Set the min size and...
-	       max: 334 314;		// max size so it wont scale.
-	       image.normal: "LeftBit.png";
-	    }
-	 }
-	 part { name: "RightBit";
-	    description { state: "default" 0.0;
-	       align: 1.0 0.0;		// Align Right and at the top.
-	       min: 260 284; 		// Set the min size and...
-	       max: 260 284;		// max size so it wont scale.
-	       image.normal: "RightBit.png";
-	    }
-	 }
-	 part { name: "ELogo";
-	    description { state: "default" 0.0;
-		rel1.relative: 0.4 0.3;
-		rel2.relative: 0.6 0.7;
-	       //~ min: 270 355;		// The absence of an align: will
-	       max: 270 350;		// make the image centred.
-	       image.normal: "ELogo.png";
-	    }
-	 }
+  //~ data.item: "noanimation" "0";
+  images.image: "bodhi-leaf-wp.png" COMP;
+  data { item: "style" "0"; }
+  max: 2062 1124;
+
+  parts {
+    part { name: "bg"; mouse_events: 0; type: IMAGE;
+      description { state: "default" 0.0;
+      color: 0 0 0 255;
+      image {
+          normal: "bodhi-leaf-wp.png";
+          //~ scale_hint: STATIC;
+        }
       }
-   }
+      description { state: "show" 0.0;
+      inherit: "default";
+      color: 255 255 255 255;
+      }
+    }
+  }
+  programs {
+      program {
+         name:   "start";
+         signal: "show"; source: "";
+         action: STATE_SET "default" 0.0;
+         transition: LINEAR 1.5;
+         target: "bg";
+         after:  "show";
+      }
+      program {
+         name:   "show";
+         action: STATE_SET "show" 0.0;
+         transition: LINEAR 1.5;
+         target: "bg";
+         after: "end";
+      }
+      program {
+         name:   "end";
+         action: SIGNAL_EMIT "e,state,done" "";
+      }
+  }
+}
