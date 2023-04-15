@@ -37,15 +37,9 @@ group {
    }
 
    parts {
-      part { name: "base";
+      part { name: "base"; type: RECT;
          description { state: "default" 0.0;
-            image.normal: "bevel_out.png";
-            image.border: 4 4 4 4;
             visible: 0;
-         }
-         description { state: "highlight" 0.0;
-            inherit: "default" 0.0;
-            visible: 1;
          }
       }
 
@@ -128,18 +122,6 @@ group {
    }
 
    programs {
-      program {
-         signal: "mouse,in"; source: "over";
-         action: STATE_SET "highlight" 0.0;
-         target: "base";
-      }
-
-      program {
-         signal: "mouse,out"; source: "over";
-         action: STATE_SET "default" 0.0;
-         target: "base";
-      }
-
       program {
          name: "mute";
          action: STATE_SET "active" 0.0;
