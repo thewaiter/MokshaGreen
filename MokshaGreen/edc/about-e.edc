@@ -34,7 +34,7 @@ group { name: "e/widgets/about/main";
       part { name: "sizer"; type: SPACER;
          scale: 1;
          description { state: "default" 0.0;
-            min: 220 260;
+            min: 280 260;
          }
       }
       part { name: "bg";
