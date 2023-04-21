@@ -1,4 +1,26 @@
 /*** DEFAULT WALLPAPER ***/
+
+/** thumbnail **/
+group{
+    images.image: "leaf_icon.png" COMP;
+	name: "icon";
+	max: 24 24;
+	parts 
+	  {
+	     part 
+	       {
+		  name: "image";
+		  mouse_events: 0;
+		  type: IMAGE;
+		  description 
+		    {
+		       state: "default" 0.0;
+		       image.normal: "leaf_icon.png";
+		    }
+	       }
+	  }
+} 
+
 group { name: "e/desktop/background";
   //~ data.item: "noanimation" "0";
   images.image: "bodhi-leaf-wp.png" COMP;

@@ -143,16 +143,15 @@ collections {
 #include "edc/illume.edc"
 #include "edc/bluez4.edc"
 #include "edc/packagekit.edc"
-// icons
-#include "edc/icons.edc"
-#include "edc/border-icons.edc"
 #include "edc/calendar.edc"
 #include "edc/deskshow.edc"
 #include "edc/mem.edc"
 #include "edc/cpu.edc"
 #include "edc/trash.edc"
 #include "edc/screenshot.edc"
-
+// icons
+#include "edc/icons.edc"
+#include "edc/border-icons.edc"
 // port unchanged stuff so this can work as a replacement
 #include "edc/O/efm_icons.edc"
 #include "edc/O/icons.edc"
