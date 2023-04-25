@@ -6922,7 +6922,7 @@ switch {
 /***************
  ! Generic views
 ****************/
-.view, iconview,
+.iconview,
 .view text,
 iconview text,
 textview text {
