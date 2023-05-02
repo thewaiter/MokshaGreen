@@ -35,6 +35,16 @@
     * 3. Try to follow the naming convention
     */
    //Standard Action Icons
+   ICON("help-faq","help_faq.png",64)                              // "enlightenment/halt"
+   ICON("preferences-modes","icon_modes.png",64)                   // "enlightenment/halt"
+   ICON("system","icon_system.png",64)                             // "enlightenment/halt"
+   ICON("system-shutdown","icon_halt.png",64)                      // "enlightenment/halt"
+   ICON("system-restart","icon_reboot.png",64)                     // "enlightenment/reboot"
+   ICON("system-suspend","icon_suspend.png",64)                    // "enlightenment/suspend"
+   ICON("system-suspend-hibernate","icon_hibernate.png",64)        // "enlightenment/hibernate"
+   ICON("system-log-out","icon_logout.png",64)                     // "enlightenment/logout"
+   ICON("system-lock-screen","icon_desklock_menu.png",64)          // "enlightenment/desklock_menu"
+   ICON("preferences-interaction","icon_interaction.png",64)       // *** // "enlightenment/interaction"
    ICON("list-add","icon_add.png",64)                              // "widget/add"
    ICON("list-remove","icon_del.png",64)                           // "widget/del"
    ICON("go-up","icon_up_arrow.png",64)                            // "widget/up_arrow" "widget/up_dir"
