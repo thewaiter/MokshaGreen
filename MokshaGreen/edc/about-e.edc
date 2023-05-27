@@ -21,7 +21,7 @@ group { name: "e/widgets/about/main";
          tag: "br" "\n";
       }
       style { name: "authors_style";
-         base: "font="FNBD" font_size=16 align=left text_class=tb_plain color=#00000044 wrap=none";
+         base: "font="FNBD" font_size=16 align=left text_class=tb_plain color=#000000CC wrap=none";
          tag: "hilight" "+ font="FNBD" text_class=tb_light color=#98cd5744";
          tag: "title" "+ font_size=24 font="FNBD" text_class=tb_big";
          tag: "/title" "- \n \n";
