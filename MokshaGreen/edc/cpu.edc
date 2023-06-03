@@ -2,7 +2,7 @@ images.image: "cpu.png" COMP;
 
 styles {
 	style { "cpu_style";
-		base: "font=Sans:style=Mono font_size=11 text_class=tb_plain align=center color=#ccc style=outline_soft_shadow shadow_color=#00000032 wrap=word";
+		base: "font=Sans:style=Bold font_size=11 text_class=tb_plain align=center color=#ccc style=outline_soft_shadow shadow_color=#00000032 wrap=word";
 		tag:  "br" "\n";
 	}
 }
