@@ -42,7 +42,7 @@ group { name: "e/widgets/border/default/border";
             rel1.relative: 1.0 1.0;
             rel1.to_x: "left";
             rel1.to_y: "top";
-            rel1.offset: 2 0;
+            rel1.offset: 1 0;
             rel2.relative: 0.0 0.0;
             rel2.to_x: "right";
             rel2.to_y: "bottom";
