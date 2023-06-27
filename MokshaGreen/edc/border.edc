@@ -66,7 +66,7 @@ group { name: "e/widgets/border/default/border";
             rel1.offset: 3 0;
             rel2.relative: 0.0 1.0;
             min: 3 0;
-            color: 36 43 47 255;
+            color: 14 18 19 255;
             fixed: 1 0;
          }
          description { state: "shaded" 0.0;
@@ -88,7 +88,7 @@ group { name: "e/widgets/border/default/border";
             rel1.offset: -3 0;
             rel2.relative: 1.0 1.0;
             min: 2 0;
-            color: 36 43 47 255;
+            color: 14 18 19 255; 
             fixed: 1 0;
          }
          description { state: "shaded" 0.0;
