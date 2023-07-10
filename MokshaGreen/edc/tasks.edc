@@ -34,7 +34,7 @@ group { name:"e/modules/tasks/item";
             inherit: "default" 0.0;
             rel1.offset: -4 -4;
             rel2.offset: 3 3;
-            color: 255 255 255 128;
+            color: 255 255 255 200;
          }
          description { state: "hilighted" 0.0;
             inherit: "default" 0.0;
@@ -48,7 +48,7 @@ group { name:"e/modules/tasks/item";
          description { state: "default" 0.0;
             rel1.offset: 3 3;
             rel2.offset: -4 -4;
-            image.normal: "vgrad_med_dark.png";
+            image.normal: "vgrad_med_lighter.png";
             fill.smooth: 0;
             TILED_HORIZ(120)
          }
@@ -69,12 +69,9 @@ group { name:"e/modules/tasks/item";
          effect: SHADOW BOTTOM; 
          scale: 1;
          description { state: "default" 0.0;
-            //~ rel1.offset: -2 -3;
             rel1.to: "e.text.label";
-            //~ rel2.offset: 3 1;
             rel2.to: "e.text.label";
             color: 152 205 87 255;
-            //~ color2: 152 205 87 24;
             color3: 152 205 87 18;
             color_class: "ilist_item_selected";
             text { font: FN; size: 10;
@@ -86,7 +83,6 @@ group { name:"e/modules/tasks/item";
          description { state: "clicked" 0.0;
             inherit: "default" 0.0;
             color: 255 255 255 255;
-            //~ color2: 152 205 87 64;
             color3: 152 205 87 32;
          }
       }
