@@ -310,15 +310,12 @@ group { name: "e/widgets/menu/default/label";
          }
       }
       part { name: "label3"; type: TEXT; mouse_events: 0;
-         effect: GLOW;
+         effect: SHADOW BOTTOM;
          scale: 1;
          description { state: "default" 0.0;
-            rel1.offset: -2 -3;
             rel1.to: "e.text.label";
-            rel2.offset: 2 1;
             rel2.to: "e.text.label";
             color: 152 205 87 255;
-            color2: 152 205 87 24;
             color3: 152 205 87 18;
             color_class: "menu_item_active";
             text { font: FN; size: 11;
