@@ -608,7 +608,7 @@ group { name: "e/widgets/border/default/border";
          }
          description { state: "focused" 0.0;
             inherit: "default" 0.0;
-            visible: 1;
+            visible: 0;
          }
       }
    }

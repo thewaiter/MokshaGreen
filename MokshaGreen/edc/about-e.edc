@@ -229,17 +229,17 @@ group { name: "e/widgets/about/main";
             fixed: 1 1;
          }
       }
-      part { name: "shine"; mouse_events: 0;
-         description { state: "default" 0.0;
-            image.normal: "shine.png";
-            rel1.offset: 0 -2;
-            rel1.to: "top_base";
-            rel2.relative: 1.0 0.0;
-            rel2.offset: -1 2;
-            rel2.to: "top_base";
-            FIXED_SIZE(69, 5)
-         }
-      }
+      //~ part { name: "shine"; mouse_events: 0;
+         //~ description { state: "default" 0.0;
+            //~ image.normal: "shine.png";
+            //~ rel1.offset: 0 -2;
+            //~ rel1.to: "top_base";
+            //~ rel2.relative: 1.0 0.0;
+            //~ rel2.offset: -1 2;
+            //~ rel2.to: "top_base";
+            //~ FIXED_SIZE(69, 5)
+         //~ }
+      //~ }
    }
    programs {
       program { name: "show1";
