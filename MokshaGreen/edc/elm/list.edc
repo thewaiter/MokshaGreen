@@ -350,7 +350,7 @@ group { name: "elm/list/item/default";
          }
          description { state: "selected" 0.0;
             inherit: "default" 0.0;
-            visible: 1;
+            visible: 0;
          }
       }
       part { name: "event_block"; type: RECT;
