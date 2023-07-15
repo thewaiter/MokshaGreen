@@ -262,7 +262,7 @@ group { name: "e/fileman/default/list/variable";
          }
       }
 //////////////////////////
-      part { name: "sel_shine"; mouse_events: 0;
+     /* part { name: "sel_shine"; mouse_events: 0;
          description { state: "default" 0.0;
             image.normal: "shine.png";
             rel1.offset: 0 -2;
@@ -277,7 +277,7 @@ group { name: "e/fileman/default/list/variable";
             inherit: "default" 0.0;
             visible: 1;
          }
-      }
+      } */
       part { name: "event"; type: RECT;
          description { state: "default" 0.0;
             color: 0 0 0 0;
@@ -314,7 +314,7 @@ group { name: "e/fileman/default/list/variable";
          target: "sel_shadow";
          target: "sel_base";
          target: "sel_bevel";
-         target: "sel_shine";
+        // target: "sel_shine";
          target: "e.text.label";
          target: "label2";
          target: "label3";
@@ -325,7 +325,7 @@ group { name: "e/fileman/default/list/variable";
          target: "sel_shadow";
          target: "sel_base";
          target: "sel_bevel";
-         target: "sel_shine";
+        // target: "sel_shine";
          target: "e.text.label";
          target: "label2";
          target: "label3";

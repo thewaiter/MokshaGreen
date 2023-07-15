@@ -401,7 +401,6 @@ group { name: "e/modules/ibar/menu/item";
 
 group { name: "e/modules/ibar/adjacent_label";
     images.image: "vgrad_med_dark.png" COMP;
-    images.image: "shine.png" COMP;
     images.image: "bevel_horiz_out.png" COMP;
     images.image: "button_normal.png" COMP;
 parts{
@@ -423,17 +422,6 @@ parts{
             image.border: 0 0 2 2;
             image.middle: 0;
             fill.smooth: 0;
-            visible: 1;
-         }
-      }
-     part { name: "shine"; mouse_events: 0;
-         description { state: "default" 0.0;
-            rel1.relative: 0 0;
-            rel2.relative: 1 0;
-            rel2.offset: 0 0;
-            image.normal: "shine.png";
-            fill.smooth: 0;
-            FIXED_SIZE(69, 5);
             visible: 1;
          }
       }
