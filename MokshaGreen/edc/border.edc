@@ -1262,6 +1262,7 @@ group { name: "e/widgets/border/default/move";
             rel2.relative: 1.0 0.0;
             rel2.offset: -1 2;
             FIXED_SIZE(69, 5)
+            visible: 0; //shine removed 
          }
       }
    }
