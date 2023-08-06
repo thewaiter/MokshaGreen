@@ -262,7 +262,7 @@ group { name: "e/fileman/default/list/variable";
          }
       }
 //////////////////////////
-     /* part { name: "sel_shine"; mouse_events: 0;
+      part { name: "sel_shine"; mouse_events: 0;
          description { state: "default" 0.0;
             image.normal: "shine.png";
             rel1.offset: 0 -2;
@@ -275,9 +275,9 @@ group { name: "e/fileman/default/list/variable";
          }
          description { state: "selected" 0.0;
             inherit: "default" 0.0;
-            visible: 1;
+            visible: 0; //shine removed
          }
-      } */
+      }
       part { name: "event"; type: RECT;
          description { state: "default" 0.0;
             color: 0 0 0 0;
@@ -721,7 +721,7 @@ group { name: "e/fileman/default/icon/fixed";
          }
          description { state: "selected" 0.0;
             inherit: "default" 0.0;
-            visible: 1;
+            visible: 0; //shine removed 
          }
       }
 //////////////////////////////      
@@ -1175,6 +1175,7 @@ group { name: "e/fileman/toolbar/default/base";
             rel2.offset: -1 2;
             rel2.to: "base";
             FIXED_SIZE(69, 5)
+            visible: 0; //shine removed
          }
       }
    }
