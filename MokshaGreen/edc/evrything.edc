@@ -103,6 +103,7 @@ group { name: "e/modules/everything/main";
             rel2.offset: -1 2;
             rel2.to: "base";
             FIXED_SIZE(69, 5)
+            visible: 0; //shine removed 
          }
       }
    }
@@ -443,6 +444,7 @@ group { name: "e/modules/everything/list";
             rel2.offset: -1 2;
             rel2.to: "bar_bevel";
             FIXED_SIZE(69, 5)
+            visible: 0; //shine removed 
          }
       }
       part { name: "e.text.label"; type: TEXT;
@@ -1447,7 +1449,7 @@ group { name: "e/modules/everything/thumbview/item/thumb";
          }
          description { state: "selected" 0.0;
             inherit: "default" 0.0;
-            visible: 1;
+            visible: 0; //shine removed 
          }
       }
       part { name: "event"; type: RECT;
@@ -1781,7 +1783,7 @@ group { name: "e/modules/everything/thumbview/item/list";
          }
          description { state: "selected" 0.0;
             inherit: "default" 0.0;
-            visible: 1;
+            visible: 0; //shine removed 
          }
       }
       part { name: "event"; type: RECT;
