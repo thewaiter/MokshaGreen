@@ -265,7 +265,7 @@ group { name: "elm/flipselector/base/default";
          }
          description { state: "visible" 0.0;
             inherit: "default" 0.0;
-            visible: 1;
+            visible: 0; //shine eliminated
          }
       }
       part { name: "elm.bottom"; type: TEXT; mouse_events: 0;

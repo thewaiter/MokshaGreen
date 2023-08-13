@@ -131,6 +131,7 @@ group { name: "elm/toolbar/base/default";
             rel2.offset: -1 2;
             rel2.to: "base";
             FIXED_SIZE(69, 5)
+            visible: 0; //shine eliminated
          }
       }
       

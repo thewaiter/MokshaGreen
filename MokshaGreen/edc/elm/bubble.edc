@@ -156,6 +156,7 @@ group { name: "elm/bubble/top_left/default";
             rel2.offset: -1 2;
             rel2.to: "over";
             FIXED_SIZE(69, 5)
+            visible: 0; //shine eliminated
          }
       }
    }
@@ -342,6 +343,7 @@ group { name: "elm/bubble/top_right/default";
             rel2.offset: -1 2;
             rel2.to: "over";
             FIXED_SIZE(69, 5)
+            visible: 0; //shine eliminated
          }
       }
    }
@@ -526,6 +528,7 @@ group { name: "elm/bubble/bottom_left/default";
             rel2.offset: -1 2;
             rel2.to: "over";
             FIXED_SIZE(69, 5)
+            visible: 0; //shine eliminated
          }
       }
    }
@@ -708,6 +711,7 @@ group { name: "elm/bubble/bottom_right/default";
             rel2.offset: -1 2;
             rel2.to: "over";
             FIXED_SIZE(69, 5)
+            visible: 0; //shine eliminated
          }
       }
    }

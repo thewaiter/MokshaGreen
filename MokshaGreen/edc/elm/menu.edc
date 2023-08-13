@@ -177,7 +177,7 @@ group { name: "elm/menu/item/default";
          }
          description { state: "active" 0.0;
             inherit:  "default" 0.0;
-            visible: 1;
+            visible: 0; //shine eliminated
          }
          description { state: "disabled" 0.0;
             inherit:  "default" 0.0;
@@ -574,7 +574,7 @@ group { name: "elm/menu/main_menu_submenu/default";
          }
          description { state: "active" 0.0;
             inherit:  "default" 0.0;
-            visible: 1;
+            visible: 0; //shine eliminated
          }
          description { state: "disabled" 0.0;
             inherit:  "default" 0.0;
