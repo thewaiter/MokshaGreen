@@ -160,7 +160,10 @@ group { name: "e/modules/clock/digital";
               valset("h0", hour / 10);
               valset("h1", hour % 10);
               set_state(PART:"timearea", "default", 0.0);
-              set_state(PART:"hours1", "default", 0.0);
+              if (dat)
+                set_state(PART:"timearea", "date", 0.0);
+              else
+                set_state(PART:"hours1", "default", 0.0);
             }
             else
             {
