@@ -384,9 +384,15 @@ group { name: "e/widgets/border/default/border";
             rel1.relative: 1.0 0.0;
             rel2.relative: 1.0 1.0;
             rel2.to_y: "top";
+            rel2.offset: -4 0;
             align: 1.0 0.5;
             aspect: 1.0 1.0; aspect_preference: VERTICAL;
             color: 0 0 0 0;
+            offscale;
+         }
+         description { state: "max" 0.0;
+            inherit: "default";
+            rel2.offset: 0 0;
          }
       }
       part { name: "e.event.maximize"; type: RECT;
@@ -763,6 +769,7 @@ group { name: "e/widgets/border/default/border";
          target: "e.event.resize.bl";
          target: "e.event.resize.b";
          target: "e.event.resize.br";
+         target: "e.event.close";
       }
       program {
          signal: "e,action,unmaximize*"; source: "e";
@@ -775,6 +782,7 @@ group { name: "e/widgets/border/default/border";
          target: "e.event.resize.bl";
          target: "e.event.resize.b";
          target: "e.event.resize.br";
+         target: "e.event.close";
       }
       program {
          signal: "mouse,down,*"; source: "e.event.close";
