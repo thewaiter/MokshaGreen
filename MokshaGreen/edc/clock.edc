@@ -214,7 +214,7 @@ group { name: "e/modules/clock/digital";
       part { name: "hours1"; type: RECT;
          description { state: "default" 0.0;
             rel1.relative: (0/16) 0.0;
-            rel2.relative: (3/16) 1.0; //not sure why but 2/16 causes ridiculously small number
+            rel2.relative: (2/16) 1.0;
             rel1.to: "timearea";
             rel2.to: "timearea";
             visible: 0;
