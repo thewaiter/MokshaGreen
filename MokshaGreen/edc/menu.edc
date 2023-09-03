@@ -7,6 +7,7 @@ group { name: "e/widgets/menu/default/background";
          description { state: "default" 0.0;
             rel1.relative: 0.0 1.0;
             rel1.to_y: "top";
+            rel1.offset: 32 0; 
             color: 14 18 19 255;
          }
       }
