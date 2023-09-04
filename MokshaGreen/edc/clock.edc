@@ -157,24 +157,20 @@ group { name: "e/modules/clock/digital";
                if (hour == 0) hour = 12;
             }
             if (hour >= 10) {
-              valset("h0", hour / 10);
-              valset("h1", hour % 10);
-              set_state(PART:"hours1", "default", 0.0);
               if (dat)
                 set_state(PART:"timearea", "date", 0.0);
               else
                 set_state(PART:"timearea", "default", 0.0);
-                
             }
-            else
-            {
-              valset("h1", hour % 10);
+            else {
               if (dat)
                 set_state(PART:"timearea", "date", 0.0);
               else
                 set_state(PART:"timearea", "hrs1_hide", 0.0);
               set_state(PART:"hours1", "hide", 0.0);
             }
+            valset("h0", hour / 10);
+            valset("h1", hour % 10);
             apvalset(PART:"ap", pm);
          }
       }
