@@ -160,15 +160,15 @@ group { name: "e/modules/clock/digital";
             if (hour >= 10) {
               if (dat)
                 set_state(PART:"timearea", "date", 0.0);
-              else
+              else {
                 set_state(PART:"timearea", "default", 0.0);
+              }
             }
             else {
               if (dat)
                 set_state(PART:"timearea", "date", 0.0);
               else
                 set_state(PART:"timearea", "hrs1_hide", 0.0);
-              set_state(PART:"hours1", "hide", 0.0);
             }
             valset("h0", hour / 10);
             valset("h1", hour % 10);
@@ -204,7 +204,7 @@ group { name: "e/modules/clock/digital";
             rel2.to_y: "e.text.today";
          }
          description { state: "hrs1_hide" 0.0;
-            rel1.relative: (-2/16) 0.0;
+            rel1.relative: (-4/16) 0.0;
             visible: 0;
          }
       }
@@ -212,13 +212,8 @@ group { name: "e/modules/clock/digital";
          description { state: "default" 0.0;
             rel1.relative: (0/16) 0.0;
             rel2.relative: (2/16) 1.0;
-            rel1.to: "timearea";
-            rel2.to: "timearea";
+            rel.to: "timearea";
             visible: 0;
-         }
-         description { state: "hide" 0.0;
-            inherit: "default";
-            rel2.relative: (0/16) 0.0;
          }
       }
       part { name: "hours2"; type: RECT;
