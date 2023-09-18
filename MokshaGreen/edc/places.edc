@@ -1,0 +1,16 @@
+group {
+        images.image: "harddisk.png" COMP;
+        name: "modules/places/main";
+        max:  128 128;
+        parts {
+           part { name: "logo";
+              description { state: "default" 0.0;
+                 aspect: 1.0 1.0;
+                 aspect_preference: BOTH;
+                 rel1.offset: 0 0;
+                 rel2.offset: -1 -1;
+                 image.normal: "harddisk.png";
+              }
+           }
+        }
+      }

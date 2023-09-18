@@ -99,6 +99,7 @@ collections {
 #include "edc/about-e.edc"
 #include "edc/about-theme.edc"
 #include "edc/transitions.edc"
+#include "edc/places.edc"
 // widgets
 #include "edc/menu.edc"
 #include "edc/button.edc"
