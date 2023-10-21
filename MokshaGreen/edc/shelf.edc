@@ -337,7 +337,7 @@ group { name: "e/shelf/default/plain";
          clip_to: "clip";
          description { state: "default" 0.0;
             rel1.offset: 1 1;
-            rel2.offset: -2 -2;
+            rel2.offset: -1 -1;
          }
       }
    }
