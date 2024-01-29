@@ -390,10 +390,10 @@ group { name: "e/widgets/border/default/border";
             color: 0 0 0 0;
             offscale;
          }
-         description { state: "max" 0.0;
-            inherit: "default";
-            rel2.offset: 0 0;
-         }
+         //~ description { state: "max" 0.0;
+            //~ inherit: "default";
+            //~ rel2.offset: 0 0;
+         //~ }
       }
       part { name: "e.event.maximize"; type: RECT;
          description { state: "default" 0.0;
@@ -770,7 +770,7 @@ group { name: "e/widgets/border/default/border";
          target: "e.event.resize.bl";
          target: "e.event.resize.b";
          target: "e.event.resize.br";
-         target: "e.event.close";
+         //~ target: "e.event.close";
       }
       program {
          signal: "e,action,unmaximize*"; source: "e";
