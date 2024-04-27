@@ -149,6 +149,7 @@ group { name: "e/widgets/ilist";
                min: 1 1;
                align: 0.0 0.5;
                text_class: "ilist_item";
+               ellipsis: -1;
             }
          }
          description { state: "selected" 0.0;
