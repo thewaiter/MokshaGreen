@@ -1,4 +1,4 @@
-#define HOVER_EFFECT 1
+#define HOVER_EFFECT 0
 #define BG_OFFSET 20
 
 images {
