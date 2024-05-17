@@ -149,6 +149,7 @@ collections {
 #include "edc/cpu.edc"
 #include "edc/trash.edc"
 #include "edc/screenshot.edc"
+#include "edc/engage.edc"
 // icons
 #include "edc/icons.edc"
 #include "edc/border-icons.edc"
