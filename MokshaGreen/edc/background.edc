@@ -2,38 +2,37 @@
 
 /** thumbnail **/
 group{
-    images.image: "leaf_icon.png" COMP;
-	name: "icon";
-	max: 24 24;
-	parts 
-	  {
-	     part 
-	       {
-		  name: "image";
-		  mouse_events: 0;
-		  type: IMAGE;
-		  description 
-		    {
-		       state: "default" 0.0;
-		       image.normal: "leaf_icon.png";
-		    }
-	       }
-	  }
+   images.image: "leaf_icon.png" COMP;
+      name: "icon";
+      max: 24 24;
+      parts {
+          part {
+             name: "image";
+             mouse_events: 0;
+             type: IMAGE;
+             description {
+                  state: "default" 0.0;
+                  image.normal: "leaf_icon.png";
+             }
+          }
+      }
 } 
 
 group { name: "e/desktop/background";
   //~ data.item: "noanimation" "0";
   images.image: "bodhi-leaf-wp.png" COMP;
-  data { item: "style" "0"; }
+  data { item: "style" "4"; }
   max: 2062 1124;
 
   parts {
     part { name: "bg"; mouse_events: 0; type: IMAGE;
       description { state: "default" 0.0;
       color: 0 0 0 255;
+      aspect: 1.600000000 1.600000000; 
+      aspect_preference: NONE;
       image {
           normal: "bodhi-leaf-wp.png";
-          //~ scale_hint: STATIC;
+          scale_hint: STATIC;
         }
       }
       description { state: "show" 0.0;
