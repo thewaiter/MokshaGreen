@@ -17,43 +17,55 @@
          part { name: "elm.text"; \
             description { state: "default" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "selected" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "disabled" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "flip_enabled" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
          } \
          part { name: "label2"; \
             description { state: "default" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "selected" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "disabled" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "flip_enabled" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
          } \
          part { name: "label3"; \
             description { state: "default" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "selected" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "disabled" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "flip_enabled" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
          } \
       } \
@@ -65,15 +77,19 @@
          part { name: "elm.text"; \
             description { state: "default" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "selected" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "disabled" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
             description { state: "flip_enabled" 0.0; \
                text.min: 0 1; \
+               text.ellipsis: 0.0; \
             } \
          } \
          part { name: "label2"; \
@@ -173,6 +189,7 @@ group { name: "elm/genlist/item/group_index/default";
                min: 1 1;
                align: 0.0 0.5;
                text_class: "list_group_item";
+               ellipsis: -1;
             }
          }
          description { state: "disabled" 0.0;
@@ -463,6 +480,7 @@ group { name: "elm/genlist/item/default/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -491,6 +509,7 @@ group { name: "elm/genlist/item/default/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -523,6 +542,7 @@ group { name: "elm/genlist/item/default/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -708,6 +728,7 @@ group { name: "elm/genlist/item/default_style/default";
                min: 1 1;
                align: 0.0 0.5;
                text_class: "list_item";
+               ellipsis: -1;
                style: "genlist_style";
             }
          }
@@ -733,6 +754,7 @@ group { name: "elm/genlist/item/default_style/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
                style: "genlist_style_disabled";
             }
@@ -762,6 +784,7 @@ group { name: "elm/genlist/item/default_style/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
                style: "genlist_style_selected";
             }
@@ -949,6 +972,7 @@ group { name: "elm/genlist/item/one_icon/default";
             text { font: FN; size: 10;
                min: 0 1;
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -977,6 +1001,7 @@ group { name: "elm/genlist/item/one_icon/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -1009,6 +1034,7 @@ group { name: "elm/genlist/item/one_icon/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -1155,6 +1181,7 @@ group { name: "elm/genlist/item/end_icon/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -1183,6 +1210,7 @@ group { name: "elm/genlist/item/end_icon/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -1215,6 +1243,7 @@ group { name: "elm/genlist/item/end_icon/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -1355,6 +1384,7 @@ group { name: "elm/genlist/item/no_icon/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -1383,6 +1413,7 @@ group { name: "elm/genlist/item/no_icon/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -1415,6 +1446,7 @@ group { name: "elm/genlist/item/no_icon/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -2070,6 +2102,7 @@ group { name: "elm/genlist/item/icon_top_text_bottom/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.5 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -2098,6 +2131,7 @@ group { name: "elm/genlist/item/icon_top_text_bottom/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.5 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -2130,6 +2164,7 @@ group { name: "elm/genlist/item/icon_top_text_bottom/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.5 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -2507,6 +2542,7 @@ group { name: "elm/genlist/item/double_label/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.0;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -2535,6 +2571,7 @@ group { name: "elm/genlist/item/double_label/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -2567,6 +2604,7 @@ group { name: "elm/genlist/item/double_label/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -2614,6 +2652,7 @@ group { name: "elm/genlist/item/double_label/default";
             text { font: FN; size: 8;
                min: 1 1;
                align: 0.0 1.0;
+               ellipsis: -1;
                text_class: "list_item_sub";
             }
          }
@@ -3137,6 +3176,7 @@ group { name: "elm/genlist/item/message/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.0;
+               ellipsis: -1;
                text_class: "list_item";
             }
             fixed: 0 1;
@@ -3167,6 +3207,7 @@ group { name: "elm/genlist/item/message/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -3200,6 +3241,7 @@ group { name: "elm/genlist/item/message/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -3247,6 +3289,7 @@ group { name: "elm/genlist/item/message/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -3275,6 +3318,7 @@ group { name: "elm/genlist/item/message/default";
             text { font: FN; size: 10;
                text_source: "elm.title.1";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -3307,6 +3351,7 @@ group { name: "elm/genlist/item/message/default";
             text { font: FN; size: 10;
                text_source: "elm.title.1";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -3340,6 +3385,7 @@ group { name: "elm/genlist/item/message/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 1.0;
+               ellipsis: -1;
                text_class: "list_item";
             }
             fixed: 0 1;
@@ -3369,6 +3415,7 @@ group { name: "elm/genlist/item/message/default";
             text { font: FN; size: 10;
                text_source: "elm.title.2";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -3544,6 +3591,7 @@ group { name: "elm/genlist/item/media/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.0;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -3572,6 +3620,7 @@ group { name: "elm/genlist/item/media/default";
             text { font: FN; size: 10;
                text_source: "elm.text.title";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -3604,6 +3653,7 @@ group { name: "elm/genlist/item/media/default";
             text { font: FN; size: 10;
                text_source: "elm.text.title";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -3650,6 +3700,7 @@ group { name: "elm/genlist/item/media/default";
             text { font: FN; size: 8;
                min: 1 1;
                align: 0.0 1.0;
+               ellipsis: -1;
                text_class: "list_item_sub";
             }
          }
@@ -3678,6 +3729,7 @@ group { name: "elm/genlist/item/media/default";
             text { font: FN; size: 8;
                text_source: "elm.text.album-artist";
                align: 0.0 1.0;
+               ellipsis: -1;
                text_class: "list_item_sub";
             }
             visible: 0;
@@ -3710,6 +3762,7 @@ group { name: "elm/genlist/item/media/default";
             text { font: FN; size: 8;
                text_source: "elm.text.album-artist";
                align: 0.0 1.0;
+               ellipsis: -1;
                text_class: "list_item_sub";
             }
             visible: 0;
@@ -4022,6 +4075,7 @@ group { name: "elm/genlist/item/media-album/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.0;
+               ellipsis: -1;
                text_class: "list_item";
             }
             fixed: 1 0;
@@ -4051,6 +4105,7 @@ group { name: "elm/genlist/item/media-album/default";
             text { font: FN; size: 10;
                text_source: "elm.text.trackno";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -4083,6 +4138,7 @@ group { name: "elm/genlist/item/media-album/default";
             text { font: FN; size: 10;
                text_source: "elm.text.trackno";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -4126,6 +4182,7 @@ group { name: "elm/genlist/item/media-album/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.5;
+               ellipsis: -1;
                text: ":";
             }
          }
@@ -4151,6 +4208,7 @@ group { name: "elm/genlist/item/media-album/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.0;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -4179,6 +4237,7 @@ group { name: "elm/genlist/item/media-album/default";
             text { font: FN; size: 10;
                text_source: "elm.text.title";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -4211,6 +4270,7 @@ group { name: "elm/genlist/item/media-album/default";
             text { font: FN; size: 10;
                text_source: "elm.text.title";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -4246,6 +4306,7 @@ group { name: "elm/genlist/item/media-album/default";
             text { font: FN; size: 8;
                min: 1 1;
                align: 0.0 1.0;
+               ellipsis: -1;
                text_class: "list_item_sub";
             }
          }
@@ -4274,6 +4335,7 @@ group { name: "elm/genlist/item/media-album/default";
             text { font: FN; size: 8;
                text_source: "elm.text.length";
                align: 0.0 1.0;
+               ellipsis: -1;
                text_class: "list_item_sub";
             }
             visible: 0;
@@ -4306,6 +4368,7 @@ group { name: "elm/genlist/item/media-album/default";
             text { font: FN; size: 8;
                text_source: "elm.text.length";
                align: 0.0 1.0;
+               ellipsis: -1;
                text_class: "list_item_sub";
             }
             visible: 0;
@@ -4626,6 +4689,7 @@ group { name: "elm/genlist/item/media-preview/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.0;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -4654,6 +4718,7 @@ group { name: "elm/genlist/item/media-preview/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -4686,6 +4751,7 @@ group { name: "elm/genlist/item/media-preview/default";
             text { font: FN; size: 10;
                text_source: "elm.text";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -4731,6 +4797,7 @@ group { name: "elm/genlist/item/media-preview/default";
             align: 0.0 1.0;
             text { font: FN; size: 8;
                min: 1 1;
+               ellipsis: -1;
                align: 0.0 1.0;
                text_class: "list_item_sub";
             }
@@ -4760,6 +4827,7 @@ group { name: "elm/genlist/item/media-preview/default";
             text { font: FN; size: 8;
                text_source: "elm.text.artist";
                align: 0.0 1.0;
+               ellipsis: -1;
                text_class: "list_item_sub";
             }
             visible: 0;
@@ -4792,6 +4860,7 @@ group { name: "elm/genlist/item/media-preview/default";
             text { font: FN; size: 8;
                text_source: "elm.text.artist";
                align: 0.0 1.0;
+               ellipsis: -1;
                text_class: "list_item_sub";
             }
             visible: 0;
@@ -5220,6 +5289,7 @@ group { name: "elm/genlist/item/mode/default";
             text { font: FN; size: 10;
                min: 1 1;
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
          }
@@ -5248,6 +5318,7 @@ group { name: "elm/genlist/item/mode/default";
             text { font: FN; size: 10;
                text_source: "elm.text.mode";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
@@ -5280,6 +5351,7 @@ group { name: "elm/genlist/item/mode/default";
             text { font: FN; size: 10;
                text_source: "elm.text.mode";
                align: 0.0 0.5;
+               ellipsis: -1;
                text_class: "list_item";
             }
             visible: 0;
