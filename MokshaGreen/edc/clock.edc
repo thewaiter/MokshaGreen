@@ -619,12 +619,7 @@ group { name: "e/modules/clock/main";
             set_state(PART:"hours-sh", "custom", 0.0);
          }
    }
-   parts {   
-      //~ part { name: "event"; type: RECT;
-         //~ description { state: "default" 0.0;
-            //~ color: 0 0 0 0;
-         //~ }
-      //~ }
+   parts {
       part { name: "base-sh";
          description { state: "default" 0.0;
             rel1.to: "base";
@@ -645,8 +640,6 @@ group { name: "e/modules/clock/main";
       }
       part { name: "base";
          description { state: "default" 0.0;
-            //~ rel1.relative: (25/380) (25/380);
-            //~ rel2.relative: (365/380) (365/380);
             aspect: 1.0 1.0; aspect_preference: BOTH;
             image.normal: "clock_base.png";
          }
@@ -759,6 +752,11 @@ group { name: "e/modules/clock/main";
             min: 12 12;
             max: 32 32;
             image.normal: "knob";
+         }
+      }
+      part { name: "event"; type: RECT;
+         description { state: "default" 0.0;
+            color: 0 0 0 0;
          }
       }
    }
@@ -891,7 +889,7 @@ group { name: "e/modules/clock/calendar/day";
             color: 255 255 255 255;
             color3: 0 0 0 128;
             text { font: FN; size: 10;
-               text: "00";
+               text: "";
                min: 1 1;
                ellipsis: -1;
                align: 0.5 0.5;
@@ -913,7 +911,8 @@ group { name: "e/modules/clock/calendar/day";
          description { state: "weeknumb" 0.0;
             inherit: "default" 0.0;
             text.size: 7;
-            text.align: 0.8 0.35;
+            //~ rel1.offset: -10 0;
+            //~ text.align: 0.8 0.35;
             color: 255 255 255 200;
          } 
       }
