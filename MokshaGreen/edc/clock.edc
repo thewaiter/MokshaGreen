@@ -619,12 +619,7 @@ group { name: "e/modules/clock/main";
             set_state(PART:"hours-sh", "custom", 0.0);
          }
    }
-   parts {   
-      //~ part { name: "event"; type: RECT;
-         //~ description { state: "default" 0.0;
-            //~ color: 0 0 0 0;
-         //~ }
-      //~ }
+   parts {
       part { name: "base-sh";
          description { state: "default" 0.0;
             rel1.to: "base";
@@ -759,6 +754,11 @@ group { name: "e/modules/clock/main";
             min: 12 12;
             max: 32 32;
             image.normal: "knob";
+         }
+      }
+      part { name: "event"; type: RECT;
+         description { state: "default" 0.0;
+            color: 0 0 0 0;
          }
       }
    }
