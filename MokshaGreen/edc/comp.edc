@@ -192,6 +192,7 @@ group { name: "e/comp/default";
             image.normal: "win_shadow.png";
             image.border: 14 14 14 14;
             image.middle: 0;
+            color: 0 0 0 128;
             rel1.to: "e.swallow.content";
             rel1.offset: -7  -3;
             rel2.to: "e.swallow.content";
@@ -497,7 +498,7 @@ group { name: "e/comp/fullscreen";
          }
          description { state: "visible1" 0.0;
             inherit: "default" 0.0;
-            color: 255 255 255 255;
+            color: 255 255 255 64;
             visible: 1;
          }
          description { state: "visible2" 0.0;
