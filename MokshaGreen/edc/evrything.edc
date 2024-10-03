@@ -1893,8 +1893,6 @@ group { name: "e/modules/everything/textblock";
 }
 
 group { name: "e/modules/everything/gadget";
-   images.image: "logo_blue_small.png" COMP;
-   images.image: "logo_blue_small_glow.png" COMP;
    images.image: "evry.png" COMP;
    max: 127 127;
    parts {
