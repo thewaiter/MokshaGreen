@@ -989,7 +989,8 @@ group { name: "e/widgets/border/noresize/border";
    parts {
       part { name: "e.swallow.client"; type: SWALLOW;
          description { state: "default" 0.0;
-            rel2.relative: 1.0 1.0;
+            rel1.offset: -2  0;
+            rel2.offset:  1 -1;
          }
       }
       part { name: "bottom"; type: RECT;
