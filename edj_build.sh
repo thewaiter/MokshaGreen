@@ -1,0 +1,3 @@
+cd MokshaGreen
+./build.sh
+
