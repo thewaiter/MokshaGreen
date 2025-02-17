@@ -17,7 +17,5 @@
 
 sudo cp -r MokshaGreen-Icons/ /usr/share/icons/Icons-Moksha-Green
 sudo cp -r MokshaGreen-GTK/ /usr/share/themes/MokshaGreen
-cd MokshaGreen
-./build.sh
-cd ..
+./build-legacy.sh
 sudo cp MokshaGreen.edj /usr/share/enlightenment/data/themes/
