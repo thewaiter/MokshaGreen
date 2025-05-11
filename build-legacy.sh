@@ -3,7 +3,9 @@
 
 printf "\n\033[1;33mWARNING:\033[0m For use with Bodhi Linux 7 only.\n\n"
 cd MokshaGreen
-sed -i 's/Moksha-Green/Icons-Moksha-Green/g' default.edc
+sed -i \
+    -e 's/item: "icon-theme" *"[^"]*"/item: "icon-theme"    "Icons-Moksha-Green"/' \
+    default.edc
 ./build.sh
-sed -i 's/Icons-Moksha-Green/Moksha-Green/g' default.edc
+git restore default.edc
 cd ..
