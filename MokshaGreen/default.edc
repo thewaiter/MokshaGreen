@@ -12,7 +12,7 @@ data.item: "version" "110";
     item: "theme/license"  "License";
     item: "gtk-theme"      "MokshaGreen";
 //~ item: "elm-theme"      "MokshaGreen";
-    item: "icon-theme"     "Icons-Moksha-Green";
+    item: "icon-theme"     "MokshaGreen";
 }
 collections {
 #include "colorclasses.edc"
