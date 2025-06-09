@@ -1,9 +1,10 @@
+efl_version: 1 25;
 #include "macros.edc"
 
 externals.external:"elm";
 //theme api version.from 1.10 we will check version to avoid
 //compat issues
-data.item: "version" "110";
+data.item: "version" "125";
 
  data {
     item: "theme/name"     "Moksha Green";
