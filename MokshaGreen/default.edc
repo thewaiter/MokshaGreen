@@ -4,7 +4,6 @@ efl_version: 1 25;
 externals.external:"elm";
 //theme api version.from 1.10 we will check version to avoid
 //compat issues
-data.item: "version" "125";
 
  data {
     item: "theme/name"     "Moksha Green";
@@ -12,8 +11,8 @@ data.item: "version" "125";
     item: "theme/author"   "agust, the_waiter, hoogland";
     item: "theme/license"  "License";
     item: "gtk-theme"      "MokshaGreen";
-//~ item: "elm-theme"      "MokshaGreen";
     item: "icon-theme"     "MokshaGreen";
+    item: "version"        "125";
 }
 collections {
 #include "colorclasses.edc"
