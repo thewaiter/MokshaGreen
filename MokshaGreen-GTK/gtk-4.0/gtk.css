@@ -723,7 +723,7 @@ popover.menu arrow.left, popover.menu radio.left, popover.menu check.left { marg
 
 popover.menu arrow.right, popover.menu radio.right, popover.menu check.right { margin-left: 6px; margin-right: -2px; }
 
-popover.menu modelbutton { min-height: 30px; min-width: 40px; padding: 0 12px; border-radius: 5px; }
+popover.menu modelbutton { color: #E4E4E4; min-height: 30px; min-width: 40px; padding: 0 12px; border-radius: 5px; }
 
 popover.menu modelbutton:selected { color: #E4E4E4; background-color: #253C3E; }
 
