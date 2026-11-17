@@ -15,8 +15,8 @@ externals.external:"elm";
     item: "version"        "125";
 }
 collections {
-#include "colorclasses.edc"
 #include "fonts-sb.edc"
+#include "colorclasses.edc"
 
 // elm
 #include "edc/elm/bg.edc"
